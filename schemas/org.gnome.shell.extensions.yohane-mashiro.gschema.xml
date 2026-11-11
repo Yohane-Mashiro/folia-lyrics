@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.yohane-mashiro"
+          path="/org/gnome/shell/extensions/yohane-mashiro/">
+    <key name="display-mode" type="s">
+      <choices>
+        <choice value="auto"/>
+        <choice value="mpris"/>
+      </choices>
+      <default>'auto'</default>
+      <summary>Display mode</summary>
+      <description>auto displays synchronized lyrics and falls back to the MPRIS title; mpris disables lyric API requests.</description>
+    </key>
+    <key name="lyric-text-priority" type="s">
+      <choices>
+        <choice value="original"/>
+        <choice value="translation"/>
+      </choices>
+      <default>'original'</default>
+      <summary>Lyric text priority</summary>
+      <description>original displays source lyrics; translation prefers translations when present.</description>
+    </key>
+    <key name="api-url" type="s">
+      <default>'http://127.0.0.1:32109/v1/lyric'</default>
+      <summary>Synchronized lyric API URL</summary>
+    </key>
+    <key name="player-match" type="s">
+      <default>'folia'</default>
+      <summary>Lyric player match</summary>
+      <description>Comma-separated, case-insensitive substrings matched against MPRIS identity, desktop entry or bus name. Leave empty to accept any player.</description>
+    </key>
+    <key name="max-width" type="u">
+      <range min="120" max="640"/>
+      <default>280</default>
+      <summary>Maximum panel lyric width</summary>
+    </key>
+    <key name="poll-interval" type="u">
+      <range min="500" max="5000"/>
+      <default>750</default>
+      <summary>Lyric API polling interval in milliseconds</summary>
+    </key>
+    <key name="glow" type="b">
+      <default>true</default>
+      <summary>Highlight the current word</summary>
+    </key>
+    <key name="detail-popup" type="b">
+      <default>true</default>
+      <summary>Show the detail popup on hover</summary>
+    </key>
+    <key name="popup-width" type="u">
+      <range min="240" max="520"/>
+      <default>320</default>
+      <summary>Detail popup width</summary>
+    </key>
+    <key name="popup-hide-delay" type="u">
+      <range min="0" max="2000"/>
+      <default>250</default>
+      <summary>Detail popup hide delay in milliseconds</summary>
+    </key>
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>'center'</default>
+      <summary>GNOME panel section</summary>
+    </key>
+    <key name="panel-index" type="u">
+      <range min="0" max="20"/>
+      <default>0</default>
+      <summary>Position within the selected GNOME panel section</summary>
+    </key>
+  </schema>
+</schemalist>

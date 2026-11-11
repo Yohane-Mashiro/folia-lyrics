@@ -1,0 +1,100 @@
+.yohane-mashiro-viewport {
+  padding: 0 8px;
+}
+
+.yohane-mashiro-word {
+  font-size: 13px;
+  color: #ffffff;
+  text-align: left;
+  transition-duration: 130ms;
+}
+
+.yohane-mashiro-word.accent {
+  color: -st-accent-color;
+}
+
+.yohane-mashiro-word.current {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.yohane-mashiro-idle-marker {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.yohane-mashiro-glow .yohane-mashiro-word.current {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.48);
+}
+
+.yohane-mashiro-popup-item {
+  padding: 6px 8px 10px;
+}
+
+.yohane-mashiro-popup {
+  spacing: 10px;
+}
+
+.yohane-mashiro-cover {
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.14);
+}
+
+.yohane-mashiro-cover-placeholder {
+  color: -st-accent-color;
+  icon-size: 40px;
+}
+
+.yohane-mashiro-track-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.yohane-mashiro-track-detail,
+.yohane-mashiro-time {
+  font-size: 11px;
+}
+
+.yohane-mashiro-progress-track {
+  height: 12px;
+  border-radius: 6px;
+  background-color: rgba(128, 128, 128, 0.24);
+}
+
+.yohane-mashiro-progress-fill {
+  height: 4px;
+  border-radius: 2px;
+  background-color: -st-accent-color;
+}
+
+.yohane-mashiro-separator {
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.24);
+}
+
+.yohane-mashiro-popup-word {
+  font-size: 13px;
+  transition-duration: 130ms;
+}
+
+.yohane-mashiro-popup-word.current {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.yohane-mashiro-translation {
+  font-size: 12px;
+}
+
+.yohane-mashiro-status {
+  font-size: 12px;
+}
+
+.yohane-mashiro-controls {
+  spacing: 6px;
+}
+
+.yohane-mashiro-controls StButton {
+  border-radius: 5px;
+  padding: 5px 12px;
+}

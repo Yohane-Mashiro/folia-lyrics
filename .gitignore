@@ -1,0 +1,11 @@
+# Build outputs
+dist/
+schemas/gschemas.compiled
+
+# Dependencies
+node_modules/
+
+# Editor and OS files
+*~
+.*.swp
+.DS_Store
